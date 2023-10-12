@@ -17,5 +17,5 @@ mongoose.connect(process.env.MONGO_URL)
 
 // Listening on PORT
 app.listen(process.env.PORT,()=>{
-    console.log('Server Running On Port 3000 !')
+    console.log('Server Running On Port',process.env.PORT ,'!')
 })
