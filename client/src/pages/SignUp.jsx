@@ -7,11 +7,14 @@ export default function SignUp() {
       
       <form className='flex flex-col gap-4'>
           <input type="text" placeholder='username'
-           className='border p-3 rounded-lg' id='username' />
+           className='border p-3 rounded-lg' id='username'
+            onChange={handleChange}/>
            <input type="email" placeholder='email'
-           className='border p-3 rounded-lg' id='email' />
+           className='border p-3 rounded-lg' id='email'
+            onChange={handleChange}/>
            <input type="password" placeholder='password'
-           className='border p-3 rounded-lg' id='password' />
+           className='border p-3 rounded-lg' id='password'
+            onChange={handleChange}/>
            <button className='bg-slate-700 text-white rounded-lg p-3 hover:opacity-95 disabled:opacity-75'>SIGN UP</button>
       </form>
 
