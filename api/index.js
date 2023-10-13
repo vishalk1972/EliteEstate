@@ -2,11 +2,14 @@ import  express  from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import userRouter from "./routes/userRoutes.js"
+import AuthRouter from "./routes/authRoute.js"
 dotenv.config();
 const app=express();
 
 //Mounting the Routes
+app.use(express.json());
 app.use('/api/user',userRouter);
+app.use('/api/auth',AuthRouter);
 
 
 // Database Connection 
